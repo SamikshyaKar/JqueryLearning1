@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        window.onload = function ()
+
+        {
+            if (document.addEventListener) {
+                document.getElementById("Btn1").addEventListener("Click", clickhandler, false)
+            }
+
+            else {
+                document.getElementById("Btn1").attachevent("Click", clickhandler, false)
+
+            }
+
+        };
+
+        function clickhandler()
+
+        {
+            alert("Javascript/Jquery");
+
+        }
+
+
+    </script>
+    <input type="button" id="Btn1" value="Click Me" />
+</body>
+</html>
